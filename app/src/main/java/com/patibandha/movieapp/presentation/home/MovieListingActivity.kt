@@ -38,7 +38,7 @@ class MovieListingActivity : BaseActivity(), OnMovieItemClickListener {
     }
 
     private fun init() {
-        setupToolbarBase(toolbar)
+        setupToolbarBase(toolbar, false)
         attachObserver()
         setupAdapter()
         getMovieList()

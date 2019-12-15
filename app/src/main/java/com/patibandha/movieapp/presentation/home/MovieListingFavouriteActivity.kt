@@ -32,7 +32,7 @@ class MovieListingFavouriteActivity : BaseActivity(), OnMovieItemClickListener {
     }
 
     private fun init() {
-        setupToolbarBase(toolbar)
+        setupToolbarBase(toolbar, true)
         setupAdapter()
         getMovieList()
     }

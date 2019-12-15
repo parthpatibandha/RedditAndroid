@@ -111,11 +111,14 @@ abstract class BaseActivity : AppCompatActivity(), CoroutineScope {
         }
     }
 
-    fun setupToolbarBase(toolBar: Toolbar) {
+    fun setupToolbarBase(toolBar: Toolbar, needToShowBackButton : Boolean? = false) {
         setSupportActionBar(toolBar)
         supportActionBar?.title = getString(R.string.app_name)
-        supportActionBar?.setHomeButtonEnabled(true)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        if(needToShowBackButton == true) {
+            supportActionBar?.setHomeButtonEnabled(true)
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        }
     }
 
     fun addFragment(id: Int, fragment: Fragment, addToBackStack: Boolean? = false) {
