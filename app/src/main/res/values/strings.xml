@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Reddit Demo</string>
+
+    <string name="str_no_data_found">No Data Found</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="str_search">Search</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="error_database">Cannot able to insert in database</string>
+    <string name="error_something">Something went wrong</string>
+    <string name="error_json">Api parsing error</string>
+    <string name="error_server">Server error</string>
+    <string name="error_data_connection">Data connection not found!</string>
+
+</resources>
